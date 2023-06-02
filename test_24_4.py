@@ -29,11 +29,7 @@ def test_search_example(selenium):
     # Make the screenshot of browser window:
     selenium.save_screenshot('result.png')
 
-
-
-# так запустятся все файды в папке
-# python3 -m pytest -v --driver Chrome --driver-path /Users/deniszutaev/PycharmProjects/Skillfactory/test_24_4.py
-
+# pytest -v --driver Chrome --driver-path /Users/deniszutaev/PycharmProjects/Skillfactory/chromedriver_mac_arm64/chromedriver test_24_4.py
 
 # вот так верно запускть конкретный файд
 # pytest -v --driver Chrome --driver-path driver-path/chromedriver.exe test_24_4.py

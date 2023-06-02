@@ -20,12 +20,12 @@ def test_petfriends(selenium):
     # add email
     field_email = selenium.find_element(By.ID, "email")
     field_email.clear()
-    field_email.send_keys("zhutaev.d@gmail.com")
+    field_email.send_keys("email")
 
     # add password
     field_pass = selenium.find_element(By.ID, "pass")
     field_pass.clear()
-    field_pass.send_keys("Lkjhgfdsa5")
+    field_pass.send_keys("password")
     time.sleep(5)
 
     # click submit button
@@ -39,4 +39,4 @@ def test_petfriends(selenium):
     else:
         raise Exception("login error")
 
-# pytest -v --driver Chrome --driver-path driver-path/chromedriver.exe test_24_5.py
+# pytest -v --driver Chrome --driver-path /Users/deniszutaev/PycharmProjects/Skillfactory/chromedriver_mac_arm64/chromedriver test_24_5.py
