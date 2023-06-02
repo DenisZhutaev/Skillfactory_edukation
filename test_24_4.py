@@ -15,13 +15,14 @@ def test_search_example(selenium):
 
     # Enter the text for search:
     search_input.clear()
-    search_input.send_keys('first test')
+    search_input.send_keys('Hario')
 
     time.sleep(3)  # just for demo purposes, do NOT repeat it on real projects!
 
     # Click Search:
     search_button = selenium.find_element(By.CLASS_NAME, 'gNO89b')
     search_button.submit()
+    # search_button.click() можно и так кликнуть, а не отпрвить форму
 
     time.sleep(3)  # just for demo purposes, do NOT repeat it on real projects!
 
